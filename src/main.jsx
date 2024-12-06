@@ -10,7 +10,7 @@ import GamePage from "./Pages/game.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello World</div>,
+    element: <LoginPage />,
     errorElement: <ErrorPage />,
   },
   {
