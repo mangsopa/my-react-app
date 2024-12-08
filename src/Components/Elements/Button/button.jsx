@@ -1,12 +1,12 @@
 import React from "react";
 
 function Button(props) {
-  const { variant = "bg-black", children } = props;
+  const { variant = "bg-black", children, type = "button" } = props; // Default type adalah "button"
   return (
     <div>
       <button
         className={`h-10 px-6 font-semibold rounded-md ${variant} text-white`}
-        type="submit"
+        type={type}
       >
         {children}
       </button>

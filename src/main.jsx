@@ -6,16 +6,17 @@ import LoginPage from "./Pages/login.jsx";
 import RegisterPage from "./Pages/register.jsx";
 import ErrorPage from "./Pages/404.jsx";
 import GamePage from "./Pages/game.jsx";
+import Dashboard from "./Pages/dashboard.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <LoginPage />,
-    errorElement: <ErrorPage />,
-  },
-  {
     path: "/login",
     element: <LoginPage />,
+    // errorElement: <ErrorPage />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   },
   {
     path: "/register",
